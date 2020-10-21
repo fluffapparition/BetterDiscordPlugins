@@ -1,4 +1,4 @@
-//META{"name":"XenoLib","source":"https://github.com/1Lighty/BetterDiscordPlugins/blob/master/Plugins/1XenoLib.plugin.js/","authorId":"239513071272329217","invite":"NYvWdN5","donate":"https://paypal.me/lighty13"}*//
+//META{"name":"XenoLib\: Friendly Edition","source":"https://github.com/1Lighty/BetterDiscordPlugins/blob/master/Plugins/1XenoLib.plugin.js/","authorId":"239513071272329217","invite":"NYvWdN5","donate":"https://paypal.me/lighty13"}*//
 /*@cc_on
 @if (@_jscript)
 
@@ -290,6 +290,7 @@ module.exports = (() => {
       }
       .xenoLib-notification-content-wrapper {
         padding: 22px 20px 0 20px;
+        pointer-events:auto;
       }
       .xenoLib-centering-bottomLeft .xenoLib-notification-content-wrapper:first-of-type, .xenoLib-centering-bottomMiddle .xenoLib-notification-content-wrapper:first-of-type, .xenoLib-centering-bottomRight .xenoLib-notification-content-wrapper:first-of-type {
         padding: 0 20px 20px 20px;
@@ -300,9 +301,16 @@ module.exports = (() => {
         background: #474747;
         pointer-events: all;
         position: relative;
-        width: 20vw;
+        width: 30vw;
         white-space: break-spaces;
         min-width: 330px;
+        pointer-events:none;
+        font-size:18px;
+      }
+      .xenoLib-notification-content-wrapper:hover{
+      	opacity:0.5;
+      	transition-duration:0.3s;
+      	transition-timing-function:linear;
       }
       .xenoLib-notification-loadbar {
         position: absolute;
@@ -354,6 +362,7 @@ module.exports = (() => {
         padding: 0;
         height: unset;
         opacity: .7;
+        pointer-events:auto;
       }
       .xenLib-notification-counter {
         float: right;
